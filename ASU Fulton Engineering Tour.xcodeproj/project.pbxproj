@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FBC65411AE45C4B001FDB58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC65401AE45C4B001FDB58 /* AppDelegate.swift */; };
+		3FBC65431AE45C4B001FDB58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC65421AE45C4B001FDB58 /* ViewController.swift */; };
+		3FBC65461AE45C4B001FDB58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBC65441AE45C4B001FDB58 /* Main.storyboard */; };
+		3FBC65481AE45C4B001FDB58 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FBC65471AE45C4B001FDB58 /* Images.xcassets */; };
+		3FBC654B1AE45C4B001FDB58 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FBC65491AE45C4B001FDB58 /* LaunchScreen.xib */; };
+		3FBC65571AE45C4B001FDB58 /* ASU_Fulton_Engineering_TourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC65561AE45C4B001FDB58 /* ASU_Fulton_Engineering_TourTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FBC65511AE45C4B001FDB58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FBC65331AE45C4B001FDB58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FBC653A1AE45C4B001FDB58;
+			remoteInfo = "ASU Fulton Engineering Tour";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FBC653B1AE45C4B001FDB58 /* ASU Fulton Engineering Tour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ASU Fulton Engineering Tour.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FBC653F1AE45C4B001FDB58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FBC65401AE45C4B001FDB58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FBC65421AE45C4B001FDB58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FBC65451AE45C4B001FDB58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FBC65471AE45C4B001FDB58 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3FBC654A1AE45C4B001FDB58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3FBC65501AE45C4B001FDB58 /* ASU Fulton Engineering TourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ASU Fulton Engineering TourTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FBC65551AE45C4B001FDB58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FBC65561AE45C4B001FDB58 /* ASU_Fulton_Engineering_TourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASU_Fulton_Engineering_TourTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FBC65381AE45C4B001FDB58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FBC654D1AE45C4B001FDB58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FBC65321AE45C4B001FDB58 = {
+			isa = PBXGroup;
+			children = (
+				3FBC653D1AE45C4B001FDB58 /* ASU Fulton Engineering Tour */,
+				3FBC65531AE45C4B001FDB58 /* ASU Fulton Engineering TourTests */,
+				3FBC653C1AE45C4B001FDB58 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FBC653C1AE45C4B001FDB58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FBC653B1AE45C4B001FDB58 /* ASU Fulton Engineering Tour.app */,
+				3FBC65501AE45C4B001FDB58 /* ASU Fulton Engineering TourTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FBC653D1AE45C4B001FDB58 /* ASU Fulton Engineering Tour */ = {
+			isa = PBXGroup;
+			children = (
+				3FBC65401AE45C4B001FDB58 /* AppDelegate.swift */,
+				3FBC65421AE45C4B001FDB58 /* ViewController.swift */,
+				3FBC65441AE45C4B001FDB58 /* Main.storyboard */,
+				3FBC65471AE45C4B001FDB58 /* Images.xcassets */,
+				3FBC65491AE45C4B001FDB58 /* LaunchScreen.xib */,
+				3FBC653E1AE45C4B001FDB58 /* Supporting Files */,
+			);
+			path = "ASU Fulton Engineering Tour";
+			sourceTree = "<group>";
+		};
+		3FBC653E1AE45C4B001FDB58 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FBC653F1AE45C4B001FDB58 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3FBC65531AE45C4B001FDB58 /* ASU Fulton Engineering TourTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FBC65561AE45C4B001FDB58 /* ASU_Fulton_Engineering_TourTests.swift */,
+				3FBC65541AE45C4B001FDB58 /* Supporting Files */,
+			);
+			path = "ASU Fulton Engineering TourTests";
+			sourceTree = "<group>";
+		};
+		3FBC65541AE45C4B001FDB58 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FBC65551AE45C4B001FDB58 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FBC653A1AE45C4B001FDB58 /* ASU Fulton Engineering Tour */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FBC655A1AE45C4B001FDB58 /* Build configuration list for PBXNativeTarget "ASU Fulton Engineering Tour" */;
+			buildPhases = (
+				3FBC65371AE45C4B001FDB58 /* Sources */,
+				3FBC65381AE45C4B001FDB58 /* Frameworks */,
+				3FBC65391AE45C4B001FDB58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ASU Fulton Engineering Tour";
+			productName = "ASU Fulton Engineering Tour";
+			productReference = 3FBC653B1AE45C4B001FDB58 /* ASU Fulton Engineering Tour.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FBC654F1AE45C4B001FDB58 /* ASU Fulton Engineering TourTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FBC655D1AE45C4B001FDB58 /* Build configuration list for PBXNativeTarget "ASU Fulton Engineering TourTests" */;
+			buildPhases = (
+				3FBC654C1AE45C4B001FDB58 /* Sources */,
+				3FBC654D1AE45C4B001FDB58 /* Frameworks */,
+				3FBC654E1AE45C4B001FDB58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FBC65521AE45C4B001FDB58 /* PBXTargetDependency */,
+			);
+			name = "ASU Fulton Engineering TourTests";
+			productName = "ASU Fulton Engineering TourTests";
+			productReference = 3FBC65501AE45C4B001FDB58 /* ASU Fulton Engineering TourTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FBC65331AE45C4B001FDB58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Germano;
+				TargetAttributes = {
+					3FBC653A1AE45C4B001FDB58 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					3FBC654F1AE45C4B001FDB58 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 3FBC653A1AE45C4B001FDB58;
+					};
+				};
+			};
+			buildConfigurationList = 3FBC65361AE45C4B001FDB58 /* Build configuration list for PBXProject "ASU Fulton Engineering Tour" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FBC65321AE45C4B001FDB58;
+			productRefGroup = 3FBC653C1AE45C4B001FDB58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FBC653A1AE45C4B001FDB58 /* ASU Fulton Engineering Tour */,
+				3FBC654F1AE45C4B001FDB58 /* ASU Fulton Engineering TourTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FBC65391AE45C4B001FDB58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FBC65461AE45C4B001FDB58 /* Main.storyboard in Resources */,
+				3FBC654B1AE45C4B001FDB58 /* LaunchScreen.xib in Resources */,
+				3FBC65481AE45C4B001FDB58 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FBC654E1AE45C4B001FDB58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FBC65371AE45C4B001FDB58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FBC65431AE45C4B001FDB58 /* ViewController.swift in Sources */,
+				3FBC65411AE45C4B001FDB58 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FBC654C1AE45C4B001FDB58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FBC65571AE45C4B001FDB58 /* ASU_Fulton_Engineering_TourTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FBC65521AE45C4B001FDB58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FBC653A1AE45C4B001FDB58 /* ASU Fulton Engineering Tour */;
+			targetProxy = 3FBC65511AE45C4B001FDB58 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FBC65441AE45C4B001FDB58 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FBC65451AE45C4B001FDB58 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FBC65491AE45C4B001FDB58 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FBC654A1AE45C4B001FDB58 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FBC65581AE45C4B001FDB58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3FBC65591AE45C4B001FDB58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FBC655B1AE45C4B001FDB58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "ASU Fulton Engineering Tour/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3FBC655C1AE45C4B001FDB58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "ASU Fulton Engineering Tour/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3FBC655E1AE45C4B001FDB58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ASU Fulton Engineering TourTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ASU Fulton Engineering Tour.app/ASU Fulton Engineering Tour";
+			};
+			name = Debug;
+		};
+		3FBC655F1AE45C4B001FDB58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ASU Fulton Engineering TourTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ASU Fulton Engineering Tour.app/ASU Fulton Engineering Tour";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FBC65361AE45C4B001FDB58 /* Build configuration list for PBXProject "ASU Fulton Engineering Tour" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FBC65581AE45C4B001FDB58 /* Debug */,
+				3FBC65591AE45C4B001FDB58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FBC655A1AE45C4B001FDB58 /* Build configuration list for PBXNativeTarget "ASU Fulton Engineering Tour" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FBC655B1AE45C4B001FDB58 /* Debug */,
+				3FBC655C1AE45C4B001FDB58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3FBC655D1AE45C4B001FDB58 /* Build configuration list for PBXNativeTarget "ASU Fulton Engineering TourTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FBC655E1AE45C4B001FDB58 /* Debug */,
+				3FBC655F1AE45C4B001FDB58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FBC65331AE45C4B001FDB58 /* Project object */;
+}
