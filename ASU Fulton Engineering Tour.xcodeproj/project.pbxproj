@@ -7,12 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F7BBD8F1AE802D0002B98C0 /* smTourMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7BBD8E1AE802D0002B98C0 /* smTourMapViewController.swift */; };
 		3FBC65411AE45C4B001FDB58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC65401AE45C4B001FDB58 /* AppDelegate.swift */; };
 		3FBC65431AE45C4B001FDB58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC65421AE45C4B001FDB58 /* ViewController.swift */; };
 		3FBC65461AE45C4B001FDB58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBC65441AE45C4B001FDB58 /* Main.storyboard */; };
 		3FBC65481AE45C4B001FDB58 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FBC65471AE45C4B001FDB58 /* Images.xcassets */; };
 		3FBC654B1AE45C4B001FDB58 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FBC65491AE45C4B001FDB58 /* LaunchScreen.xib */; };
 		3FBC65571AE45C4B001FDB58 /* ASU_Fulton_Engineering_TourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC65561AE45C4B001FDB58 /* ASU_Fulton_Engineering_TourTests.swift */; };
+		3FBC65631AE45D8A001FDB58 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBC65621AE45D8A001FDB58 /* GoogleMaps.framework */; };
+		3FBC65651AE47847001FDB58 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3FBC65641AE47847001FDB58 /* GoogleMaps.bundle */; };
+		3FBC656B1AE4788D001FDB58 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBC65661AE4788D001FDB58 /* AVFoundation.framework */; };
+		3FBC656C1AE4788D001FDB58 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBC65671AE4788D001FDB58 /* CoreData.framework */; };
+		3FBC656D1AE4788D001FDB58 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBC65681AE4788D001FDB58 /* CoreFoundation.framework */; };
+		3FBC656E1AE4788D001FDB58 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBC65691AE4788D001FDB58 /* CoreText.framework */; };
+		3FBC656F1AE4788D001FDB58 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBC656A1AE4788D001FDB58 /* GLKit.framework */; };
+		3FBC65741AE478C7001FDB58 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBC65701AE478C7001FDB58 /* ImageIO.framework */; };
+		3FBC65751AE478C7001FDB58 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBC65711AE478C7001FDB58 /* libc++.dylib */; };
+		3FBC65761AE478C7001FDB58 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBC65721AE478C7001FDB58 /* libicucore.dylib */; };
+		3FBC65771AE478C7001FDB58 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBC65731AE478C7001FDB58 /* libz.dylib */; };
+		3FBC657B1AE478E5001FDB58 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBC65781AE478E5001FDB58 /* OpenGLES.framework */; };
+		3FBC657C1AE478E5001FDB58 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBC65791AE478E5001FDB58 /* QuartzCore.framework */; };
+		3FBC657D1AE478E5001FDB58 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBC657A1AE478E5001FDB58 /* SystemConfiguration.framework */; };
+		3FBC65881AE4C6B3001FDB58 /* tourMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC65871AE4C6B3001FDB58 /* tourMapViewController.swift */; };
+		3FE3C7741AE55DAF002F00F5 /* Brickyard-exterior-signage-0217w-cropped.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FE3C7721AE55DAF002F00F5 /* Brickyard-exterior-signage-0217w-cropped.jpg */; };
+		3FE3C7751AE55DAF002F00F5 /* Brickyard-exterior-signage-0217w.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FE3C7731AE55DAF002F00F5 /* Brickyard-exterior-signage-0217w.jpg */; };
+		3FE3C7781AE5AE57002F00F5 /* mainMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE3C7771AE5AE57002F00F5 /* mainMapViewController.swift */; };
+		B9B0CE231B86DACF00D6FFBD /* ASU.gpx in Resources */ = {isa = PBXBuildFile; fileRef = B9B0CE221B86DACF00D6FFBD /* ASU.gpx */; };
+		D503AB1A1B05DCAB000D2E29 /* ASU-fork-1.png in Resources */ = {isa = PBXBuildFile; fileRef = D503AB191B05DCAB000D2E29 /* ASU-fork-1.png */; };
+		D503AB1B1B05DCAB000D2E29 /* ASU-fork-1.png in Resources */ = {isa = PBXBuildFile; fileRef = D503AB191B05DCAB000D2E29 /* ASU-fork-1.png */; };
+		D503AB1D1B05DCB6000D2E29 /* ASU-fork-2.png in Resources */ = {isa = PBXBuildFile; fileRef = D503AB1C1B05DCB6000D2E29 /* ASU-fork-2.png */; };
+		D503AB1E1B05DCB6000D2E29 /* ASU-fork-2.png in Resources */ = {isa = PBXBuildFile; fileRef = D503AB1C1B05DCB6000D2E29 /* ASU-fork-2.png */; };
+		D503AB201B065C65000D2E29 /* ECF.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D503AB1F1B065C65000D2E29 /* ECF.jpg */; };
+		D503AB211B065C65000D2E29 /* ECF.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D503AB1F1B065C65000D2E29 /* ECF.jpg */; };
+		D503AB231B06629E000D2E29 /* PSA.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D503AB221B06629E000D2E29 /* PSA.jpg */; };
+		D503AB241B06629E000D2E29 /* PSA.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D503AB221B06629E000D2E29 /* PSA.jpg */; };
+		D503AB261B066666000D2E29 /* ERC.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D503AB251B066666000D2E29 /* ERC.jpg */; };
+		D503AB271B066666000D2E29 /* ERC.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D503AB251B066666000D2E29 /* ERC.jpg */; };
+		D503AB291B0666BA000D2E29 /* NOBEL.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D503AB281B0666BA000D2E29 /* NOBEL.jpg */; };
+		D503AB2A1B0666BA000D2E29 /* NOBEL.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D503AB281B0666BA000D2E29 /* NOBEL.jpg */; };
+		D503AB2C1B0666ED000D2E29 /* ISTB1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D503AB2B1B0666ED000D2E29 /* ISTB1.jpg */; };
+		D503AB2D1B0666ED000D2E29 /* ISTB1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D503AB2B1B0666ED000D2E29 /* ISTB1.jpg */; };
+		D503AB2F1B066779000D2E29 /* Math Center.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D503AB2E1B066779000D2E29 /* Math Center.jpg */; };
+		D503AB301B066779000D2E29 /* Math Center.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D503AB2E1B066779000D2E29 /* Math Center.jpg */; };
+		D503AB321B066836000D2E29 /* ISTB4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D503AB311B066836000D2E29 /* ISTB4.jpg */; };
+		D503AB331B066836000D2E29 /* ISTB4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D503AB311B066836000D2E29 /* ISTB4.jpg */; };
+		D503AB351B0668DA000D2E29 /* Palm Walk.png in Resources */ = {isa = PBXBuildFile; fileRef = D503AB341B0668DA000D2E29 /* Palm Walk.png */; };
+		D503AB361B0668DA000D2E29 /* Palm Walk.png in Resources */ = {isa = PBXBuildFile; fileRef = D503AB341B0668DA000D2E29 /* Palm Walk.png */; };
+		D503AB381B0669B2000D2E29 /* CAVC.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D503AB371B0669B2000D2E29 /* CAVC.jpg */; };
+		D503AB391B0669B2000D2E29 /* CAVC.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D503AB371B0669B2000D2E29 /* CAVC.jpg */; };
+		D503AB3B1B0669EE000D2E29 /* BYENG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D503AB3A1B0669EE000D2E29 /* BYENG.jpg */; };
+		D503AB3C1B0669EE000D2E29 /* BYENG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D503AB3A1B0669EE000D2E29 /* BYENG.jpg */; };
+		D503AB3E1B066A20000D2E29 /* CTRPT.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D503AB3D1B066A20000D2E29 /* CTRPT.jpg */; };
+		D503AB3F1B066A20000D2E29 /* CTRPT.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D503AB3D1B066A20000D2E29 /* CTRPT.jpg */; };
+		D503AB411B0675C0000D2E29 /* ECG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D503AB401B0675C0000D2E29 /* ECG.jpg */; };
+		D503AB421B0675C0000D2E29 /* ECG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D503AB401B0675C0000D2E29 /* ECG.jpg */; };
+		D58BC9ED1AF31CA700AC6413 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D58BC9EC1AF31CA700AC6413 /* CoreLocation.framework */; };
+		D5F9D2E21AF498F1001325E7 /* tourTest.gpx in Resources */ = {isa = PBXBuildFile; fileRef = D5F9D2E11AF498F1001325E7 /* tourTest.gpx */; };
+		D5F9D2E31AF498F1001325E7 /* tourTest.gpx in Resources */ = {isa = PBXBuildFile; fileRef = D5F9D2E11AF498F1001325E7 /* tourTest.gpx */; };
+		D5F9D2E81B00A1C7001325E7 /* tourPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F9D2E71B00A1C7001325E7 /* tourPoints.swift */; };
+		D5F9D2E91B00A1C7001325E7 /* tourPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F9D2E71B00A1C7001325E7 /* tourPoints.swift */; };
+		D5F9D3121B025A69001325E7 /* ASUTourPoints.json in Resources */ = {isa = PBXBuildFile; fileRef = D5F9D3111B025A69001325E7 /* ASUTourPoints.json */; };
+		D5F9D3131B025A69001325E7 /* ASUTourPoints.json in Resources */ = {isa = PBXBuildFile; fileRef = D5F9D3111B025A69001325E7 /* ASUTourPoints.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +81,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F7BBD8E1AE802D0002B98C0 /* smTourMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = smTourMapViewController.swift; sourceTree = "<group>"; };
 		3FBC653B1AE45C4B001FDB58 /* ASU Fulton Engineering Tour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ASU Fulton Engineering Tour.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBC653F1AE45C4B001FDB58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FBC65401AE45C4B001FDB58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +92,44 @@
 		3FBC65501AE45C4B001FDB58 /* ASU Fulton Engineering TourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ASU Fulton Engineering TourTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBC65551AE45C4B001FDB58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FBC65561AE45C4B001FDB58 /* ASU_Fulton_Engineering_TourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASU_Fulton_Engineering_TourTests.swift; sourceTree = "<group>"; };
+		3FBC65621AE45D8A001FDB58 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		3FBC65641AE47847001FDB58 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = "../../../ASU/GoogleMaps-iOS-1.9.2/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle"; sourceTree = "<group>"; };
+		3FBC65661AE4788D001FDB58 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3FBC65671AE4788D001FDB58 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3FBC65681AE4788D001FDB58 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		3FBC65691AE4788D001FDB58 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		3FBC656A1AE4788D001FDB58 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		3FBC65701AE478C7001FDB58 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		3FBC65711AE478C7001FDB58 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		3FBC65721AE478C7001FDB58 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		3FBC65731AE478C7001FDB58 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		3FBC65781AE478E5001FDB58 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		3FBC65791AE478E5001FDB58 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3FBC657A1AE478E5001FDB58 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3FBC65871AE4C6B3001FDB58 /* tourMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tourMapViewController.swift; path = ../tourMapViewController.swift; sourceTree = "<group>"; };
+		3FE3C7721AE55DAF002F00F5 /* Brickyard-exterior-signage-0217w-cropped.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Brickyard-exterior-signage-0217w-cropped.jpg"; sourceTree = "<group>"; };
+		3FE3C7731AE55DAF002F00F5 /* Brickyard-exterior-signage-0217w.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Brickyard-exterior-signage-0217w.jpg"; sourceTree = "<group>"; };
+		3FE3C7761AE55E2A002F00F5 /* ASU Fulton Engineering Tour-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASU Fulton Engineering Tour-Bridging-Header.h"; sourceTree = "<group>"; };
+		3FE3C7771AE5AE57002F00F5 /* mainMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainMapViewController.swift; sourceTree = "<group>"; };
+		B9B0CE221B86DACF00D6FFBD /* ASU.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ASU.gpx; sourceTree = "<group>"; };
+		D503AB191B05DCAB000D2E29 /* ASU-fork-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ASU-fork-1.png"; sourceTree = "<group>"; };
+		D503AB1C1B05DCB6000D2E29 /* ASU-fork-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ASU-fork-2.png"; sourceTree = "<group>"; };
+		D503AB1F1B065C65000D2E29 /* ECF.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ECF.jpg; sourceTree = "<group>"; };
+		D503AB221B06629E000D2E29 /* PSA.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PSA.jpg; sourceTree = "<group>"; };
+		D503AB251B066666000D2E29 /* ERC.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ERC.jpg; sourceTree = "<group>"; };
+		D503AB281B0666BA000D2E29 /* NOBEL.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NOBEL.jpg; sourceTree = "<group>"; };
+		D503AB2B1B0666ED000D2E29 /* ISTB1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ISTB1.jpg; sourceTree = "<group>"; };
+		D503AB2E1B066779000D2E29 /* Math Center.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Math Center.jpg"; sourceTree = "<group>"; };
+		D503AB311B066836000D2E29 /* ISTB4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ISTB4.jpg; sourceTree = "<group>"; };
+		D503AB341B0668DA000D2E29 /* Palm Walk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Palm Walk.png"; sourceTree = "<group>"; };
+		D503AB371B0669B2000D2E29 /* CAVC.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CAVC.jpg; sourceTree = "<group>"; };
+		D503AB3A1B0669EE000D2E29 /* BYENG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BYENG.jpg; sourceTree = "<group>"; };
+		D503AB3D1B066A20000D2E29 /* CTRPT.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CTRPT.jpg; sourceTree = "<group>"; };
+		D503AB401B0675C0000D2E29 /* ECG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ECG.jpg; sourceTree = "<group>"; };
+		D58BC9EC1AF31CA700AC6413 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D5F9D2E11AF498F1001325E7 /* tourTest.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = tourTest.gpx; sourceTree = "<group>"; };
+		D5F9D2E71B00A1C7001325E7 /* tourPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tourPoints.swift; sourceTree = "<group>"; };
+		D5F9D3111B025A69001325E7 /* ASUTourPoints.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ASUTourPoints.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +137,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D58BC9ED1AF31CA700AC6413 /* CoreLocation.framework in Frameworks */,
+				3FBC657B1AE478E5001FDB58 /* OpenGLES.framework in Frameworks */,
+				3FBC657C1AE478E5001FDB58 /* QuartzCore.framework in Frameworks */,
+				3FBC657D1AE478E5001FDB58 /* SystemConfiguration.framework in Frameworks */,
+				3FBC65741AE478C7001FDB58 /* ImageIO.framework in Frameworks */,
+				3FBC65751AE478C7001FDB58 /* libc++.dylib in Frameworks */,
+				3FBC65761AE478C7001FDB58 /* libicucore.dylib in Frameworks */,
+				3FBC65771AE478C7001FDB58 /* libz.dylib in Frameworks */,
+				3FBC656B1AE4788D001FDB58 /* AVFoundation.framework in Frameworks */,
+				3FBC656C1AE4788D001FDB58 /* CoreData.framework in Frameworks */,
+				3FBC656D1AE4788D001FDB58 /* CoreFoundation.framework in Frameworks */,
+				3FBC656E1AE4788D001FDB58 /* CoreText.framework in Frameworks */,
+				3FBC656F1AE4788D001FDB58 /* GLKit.framework in Frameworks */,
+				3FBC65631AE45D8A001FDB58 /* GoogleMaps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +167,9 @@
 		3FBC65321AE45C4B001FDB58 = {
 			isa = PBXGroup;
 			children = (
+				B9B0CE221B86DACF00D6FFBD /* ASU.gpx */,
+				D5F9D2E11AF498F1001325E7 /* tourTest.gpx */,
+				3FBC65611AE45D53001FDB58 /* Frameworks */,
 				3FBC653D1AE45C4B001FDB58 /* ASU Fulton Engineering Tour */,
 				3FBC65531AE45C4B001FDB58 /* ASU Fulton Engineering TourTests */,
 				3FBC653C1AE45C4B001FDB58 /* Products */,
@@ -77,12 +188,17 @@
 		3FBC653D1AE45C4B001FDB58 /* ASU Fulton Engineering Tour */ = {
 			isa = PBXGroup;
 			children = (
+				3FE3C7761AE55E2A002F00F5 /* ASU Fulton Engineering Tour-Bridging-Header.h */,
+				3FBC65871AE4C6B3001FDB58 /* tourMapViewController.swift */,
 				3FBC65401AE45C4B001FDB58 /* AppDelegate.swift */,
 				3FBC65421AE45C4B001FDB58 /* ViewController.swift */,
 				3FBC65441AE45C4B001FDB58 /* Main.storyboard */,
+				D5F9D2E71B00A1C7001325E7 /* tourPoints.swift */,
 				3FBC65471AE45C4B001FDB58 /* Images.xcassets */,
 				3FBC65491AE45C4B001FDB58 /* LaunchScreen.xib */,
 				3FBC653E1AE45C4B001FDB58 /* Supporting Files */,
+				3FE3C7771AE5AE57002F00F5 /* mainMapViewController.swift */,
+				3F7BBD8E1AE802D0002B98C0 /* smTourMapViewController.swift */,
 			);
 			path = "ASU Fulton Engineering Tour";
 			sourceTree = "<group>";
@@ -90,6 +206,23 @@
 		3FBC653E1AE45C4B001FDB58 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D503AB401B0675C0000D2E29 /* ECG.jpg */,
+				D503AB341B0668DA000D2E29 /* Palm Walk.png */,
+				D503AB3D1B066A20000D2E29 /* CTRPT.jpg */,
+				D503AB2E1B066779000D2E29 /* Math Center.jpg */,
+				D503AB371B0669B2000D2E29 /* CAVC.jpg */,
+				D503AB3A1B0669EE000D2E29 /* BYENG.jpg */,
+				D503AB2B1B0666ED000D2E29 /* ISTB1.jpg */,
+				D503AB281B0666BA000D2E29 /* NOBEL.jpg */,
+				D503AB251B066666000D2E29 /* ERC.jpg */,
+				D503AB311B066836000D2E29 /* ISTB4.jpg */,
+				D503AB221B06629E000D2E29 /* PSA.jpg */,
+				D503AB1F1B065C65000D2E29 /* ECF.jpg */,
+				D503AB1C1B05DCB6000D2E29 /* ASU-fork-2.png */,
+				D503AB191B05DCAB000D2E29 /* ASU-fork-1.png */,
+				D5F9D3111B025A69001325E7 /* ASUTourPoints.json */,
+				3FE3C7721AE55DAF002F00F5 /* Brickyard-exterior-signage-0217w-cropped.jpg */,
+				3FE3C7731AE55DAF002F00F5 /* Brickyard-exterior-signage-0217w.jpg */,
 				3FBC653F1AE45C4B001FDB58 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +243,28 @@
 				3FBC65551AE45C4B001FDB58 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3FBC65611AE45D53001FDB58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D58BC9EC1AF31CA700AC6413 /* CoreLocation.framework */,
+				3FBC65781AE478E5001FDB58 /* OpenGLES.framework */,
+				3FBC65791AE478E5001FDB58 /* QuartzCore.framework */,
+				3FBC657A1AE478E5001FDB58 /* SystemConfiguration.framework */,
+				3FBC65701AE478C7001FDB58 /* ImageIO.framework */,
+				3FBC65711AE478C7001FDB58 /* libc++.dylib */,
+				3FBC65721AE478C7001FDB58 /* libicucore.dylib */,
+				3FBC65731AE478C7001FDB58 /* libz.dylib */,
+				3FBC65661AE4788D001FDB58 /* AVFoundation.framework */,
+				3FBC65671AE4788D001FDB58 /* CoreData.framework */,
+				3FBC65681AE4788D001FDB58 /* CoreFoundation.framework */,
+				3FBC65691AE4788D001FDB58 /* CoreText.framework */,
+				3FBC656A1AE4788D001FDB58 /* GLKit.framework */,
+				3FBC65641AE47847001FDB58 /* GoogleMaps.bundle */,
+				3FBC65621AE45D8A001FDB58 /* GoogleMaps.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +316,7 @@
 				TargetAttributes = {
 					3FBC653A1AE45C4B001FDB58 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = BWSLUFSJRA;
 					};
 					3FBC654F1AE45C4B001FDB58 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -193,8 +349,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FBC65461AE45C4B001FDB58 /* Main.storyboard in Resources */,
+				D503AB2C1B0666ED000D2E29 /* ISTB1.jpg in Resources */,
 				3FBC654B1AE45C4B001FDB58 /* LaunchScreen.xib in Resources */,
+				D503AB351B0668DA000D2E29 /* Palm Walk.png in Resources */,
+				D503AB1D1B05DCB6000D2E29 /* ASU-fork-2.png in Resources */,
+				B9B0CE231B86DACF00D6FFBD /* ASU.gpx in Resources */,
+				D503AB381B0669B2000D2E29 /* CAVC.jpg in Resources */,
+				D5F9D3121B025A69001325E7 /* ASUTourPoints.json in Resources */,
 				3FBC65481AE45C4B001FDB58 /* Images.xcassets in Resources */,
+				D503AB3E1B066A20000D2E29 /* CTRPT.jpg in Resources */,
+				D503AB411B0675C0000D2E29 /* ECG.jpg in Resources */,
+				D503AB1A1B05DCAB000D2E29 /* ASU-fork-1.png in Resources */,
+				D503AB3B1B0669EE000D2E29 /* BYENG.jpg in Resources */,
+				D503AB231B06629E000D2E29 /* PSA.jpg in Resources */,
+				3FE3C7741AE55DAF002F00F5 /* Brickyard-exterior-signage-0217w-cropped.jpg in Resources */,
+				D503AB2F1B066779000D2E29 /* Math Center.jpg in Resources */,
+				D503AB201B065C65000D2E29 /* ECF.jpg in Resources */,
+				D5F9D2E21AF498F1001325E7 /* tourTest.gpx in Resources */,
+				D503AB321B066836000D2E29 /* ISTB4.jpg in Resources */,
+				D503AB291B0666BA000D2E29 /* NOBEL.jpg in Resources */,
+				3FE3C7751AE55DAF002F00F5 /* Brickyard-exterior-signage-0217w.jpg in Resources */,
+				D503AB261B066666000D2E29 /* ERC.jpg in Resources */,
+				3FBC65651AE47847001FDB58 /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +378,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D503AB2A1B0666BA000D2E29 /* NOBEL.jpg in Resources */,
+				D503AB241B06629E000D2E29 /* PSA.jpg in Resources */,
+				D503AB1E1B05DCB6000D2E29 /* ASU-fork-2.png in Resources */,
+				D503AB3C1B0669EE000D2E29 /* BYENG.jpg in Resources */,
+				D503AB211B065C65000D2E29 /* ECF.jpg in Resources */,
+				D503AB421B0675C0000D2E29 /* ECG.jpg in Resources */,
+				D503AB3F1B066A20000D2E29 /* CTRPT.jpg in Resources */,
+				D503AB391B0669B2000D2E29 /* CAVC.jpg in Resources */,
+				D503AB2D1B0666ED000D2E29 /* ISTB1.jpg in Resources */,
+				D5F9D3131B025A69001325E7 /* ASUTourPoints.json in Resources */,
+				D503AB271B066666000D2E29 /* ERC.jpg in Resources */,
+				D503AB331B066836000D2E29 /* ISTB4.jpg in Resources */,
+				D503AB1B1B05DCAB000D2E29 /* ASU-fork-1.png in Resources */,
+				D503AB361B0668DA000D2E29 /* Palm Walk.png in Resources */,
+				D5F9D2E31AF498F1001325E7 /* tourTest.gpx in Resources */,
+				D503AB301B066779000D2E29 /* Math Center.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +406,9 @@
 			files = (
 				3FBC65431AE45C4B001FDB58 /* ViewController.swift in Sources */,
 				3FBC65411AE45C4B001FDB58 /* AppDelegate.swift in Sources */,
+				3FE3C7781AE5AE57002F00F5 /* mainMapViewController.swift in Sources */,
+				D5F9D2E81B00A1C7001325E7 /* tourPoints.swift in Sources */,
+				3F7BBD8F1AE802D0002B98C0 /* smTourMapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +417,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FBC65571AE45C4B001FDB58 /* ASU_Fulton_Engineering_TourTests.swift in Sources */,
+				3FBC65881AE4C6B3001FDB58 /* tourMapViewController.swift in Sources */,
+				D5F9D2E91B00A1C7001325E7 /* tourPoints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +472,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -292,7 +490,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "ASU Fulton Engineering Tour/ASU Fulton Engineering Tour-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -318,6 +518,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -327,7 +528,9 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "ASU Fulton Engineering Tour/ASU Fulton Engineering Tour-Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -336,9 +539,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
 				INFOPLIST_FILE = "ASU Fulton Engineering Tour/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ASU Fulton Engineering Tour/ASU Fulton Engineering Tour-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -346,9 +556,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
 				INFOPLIST_FILE = "ASU Fulton Engineering Tour/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ASU Fulton Engineering Tour/ASU Fulton Engineering Tour-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -356,6 +572,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -367,6 +585,8 @@
 				INFOPLIST_FILE = "ASU Fulton Engineering TourTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ASU Fulton Engineering Tour.app/ASU Fulton Engineering Tour";
 			};
 			name = Debug;
@@ -375,6 +595,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -382,6 +604,7 @@
 				INFOPLIST_FILE = "ASU Fulton Engineering TourTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ASU Fulton Engineering Tour.app/ASU Fulton Engineering Tour";
 			};
 			name = Release;
@@ -405,6 +628,7 @@
 				3FBC655C1AE45C4B001FDB58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FBC655D1AE45C4B001FDB58 /* Build configuration list for PBXNativeTarget "ASU Fulton Engineering TourTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +637,7 @@
 				3FBC655F1AE45C4B001FDB58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

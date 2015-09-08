@@ -4,18 +4,24 @@
 //
 //  Created by Suzanne Germano on 4/19/15.
 //  Copyright (c) 2015 Germano. All rights reserved.
-//
 
 import UIKit
 
 @UIApplicationMain
+// Google directions api key AIzaSyD2PT4eacPWeGPAFdp4SY6NmkBAwDomVd8
+// how to call direction api with lt lon http://maps.googleapis.com/maps/api/directions/json?origin=40.64974840,-73.94998180&destination=40.65084299999999,-73.9495750&sensor=false&departure_time=1343605500&mode=transit
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let googleMapsApiKey = "AIzaSyBZOu14fH9MGMtFogG6PoykSTv35Mij2jo"
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        GMSServices.provideAPIKey(googleMapsApiKey)
+        UINavigationBar.appearance().barTintColor = UIColor(red: 153.0/255.0, green: 0.0/255.0, blue: 51.0/255.0, alpha: 1.0)
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         return true
     }
 
