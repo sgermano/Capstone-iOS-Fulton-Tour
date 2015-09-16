@@ -15,7 +15,6 @@
 		3FBC654B1AE45C4B001FDB58 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FBC65491AE45C4B001FDB58 /* LaunchScreen.xib */; };
 		3FBC65571AE45C4B001FDB58 /* ASU_Fulton_Engineering_TourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC65561AE45C4B001FDB58 /* ASU_Fulton_Engineering_TourTests.swift */; };
 		3FBC65631AE45D8A001FDB58 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBC65621AE45D8A001FDB58 /* GoogleMaps.framework */; };
-		3FBC65651AE47847001FDB58 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3FBC65641AE47847001FDB58 /* GoogleMaps.bundle */; };
 		3FBC656B1AE4788D001FDB58 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBC65661AE4788D001FDB58 /* AVFoundation.framework */; };
 		3FBC656C1AE4788D001FDB58 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBC65671AE4788D001FDB58 /* CoreData.framework */; };
 		3FBC656D1AE4788D001FDB58 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBC65681AE4788D001FDB58 /* CoreFoundation.framework */; };
@@ -32,6 +31,7 @@
 		3FE3C7741AE55DAF002F00F5 /* Brickyard-exterior-signage-0217w-cropped.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FE3C7721AE55DAF002F00F5 /* Brickyard-exterior-signage-0217w-cropped.jpg */; };
 		3FE3C7751AE55DAF002F00F5 /* Brickyard-exterior-signage-0217w.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FE3C7731AE55DAF002F00F5 /* Brickyard-exterior-signage-0217w.jpg */; };
 		3FE3C7781AE5AE57002F00F5 /* mainMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE3C7771AE5AE57002F00F5 /* mainMapViewController.swift */; };
+		3FFD9FF61B9F98E40021A1E2 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3FFD9FF51B9F98E40021A1E2 /* GoogleMaps.bundle */; };
 		B9B0CE231B86DACF00D6FFBD /* ASU.gpx in Resources */ = {isa = PBXBuildFile; fileRef = B9B0CE221B86DACF00D6FFBD /* ASU.gpx */; };
 		D503AB1A1B05DCAB000D2E29 /* ASU-fork-1.png in Resources */ = {isa = PBXBuildFile; fileRef = D503AB191B05DCAB000D2E29 /* ASU-fork-1.png */; };
 		D503AB1B1B05DCAB000D2E29 /* ASU-fork-1.png in Resources */ = {isa = PBXBuildFile; fileRef = D503AB191B05DCAB000D2E29 /* ASU-fork-1.png */; };
@@ -93,7 +93,6 @@
 		3FBC65551AE45C4B001FDB58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FBC65561AE45C4B001FDB58 /* ASU_Fulton_Engineering_TourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASU_Fulton_Engineering_TourTests.swift; sourceTree = "<group>"; };
 		3FBC65621AE45D8A001FDB58 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
-		3FBC65641AE47847001FDB58 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = "../../../ASU/GoogleMaps-iOS-1.9.2/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle"; sourceTree = "<group>"; };
 		3FBC65661AE4788D001FDB58 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3FBC65671AE4788D001FDB58 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3FBC65681AE4788D001FDB58 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -111,6 +110,7 @@
 		3FE3C7731AE55DAF002F00F5 /* Brickyard-exterior-signage-0217w.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Brickyard-exterior-signage-0217w.jpg"; sourceTree = "<group>"; };
 		3FE3C7761AE55E2A002F00F5 /* ASU Fulton Engineering Tour-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASU Fulton Engineering Tour-Bridging-Header.h"; sourceTree = "<group>"; };
 		3FE3C7771AE5AE57002F00F5 /* mainMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainMapViewController.swift; sourceTree = "<group>"; };
+		3FFD9FF51B9F98E40021A1E2 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		B9B0CE221B86DACF00D6FFBD /* ASU.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ASU.gpx; sourceTree = "<group>"; };
 		D503AB191B05DCAB000D2E29 /* ASU-fork-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ASU-fork-1.png"; sourceTree = "<group>"; };
 		D503AB1C1B05DCB6000D2E29 /* ASU-fork-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ASU-fork-2.png"; sourceTree = "<group>"; };
@@ -261,7 +261,7 @@
 				3FBC65681AE4788D001FDB58 /* CoreFoundation.framework */,
 				3FBC65691AE4788D001FDB58 /* CoreText.framework */,
 				3FBC656A1AE4788D001FDB58 /* GLKit.framework */,
-				3FBC65641AE47847001FDB58 /* GoogleMaps.bundle */,
+				3FFD9FF51B9F98E40021A1E2 /* GoogleMaps.bundle */,
 				3FBC65621AE45D8A001FDB58 /* GoogleMaps.framework */,
 			);
 			name = Frameworks;
@@ -363,6 +363,7 @@
 				D503AB3B1B0669EE000D2E29 /* BYENG.jpg in Resources */,
 				D503AB231B06629E000D2E29 /* PSA.jpg in Resources */,
 				3FE3C7741AE55DAF002F00F5 /* Brickyard-exterior-signage-0217w-cropped.jpg in Resources */,
+				3FFD9FF61B9F98E40021A1E2 /* GoogleMaps.bundle in Resources */,
 				D503AB2F1B066779000D2E29 /* Math Center.jpg in Resources */,
 				D503AB201B065C65000D2E29 /* ECF.jpg in Resources */,
 				D5F9D2E21AF498F1001325E7 /* tourTest.gpx in Resources */,
@@ -370,7 +371,6 @@
 				D503AB291B0666BA000D2E29 /* NOBEL.jpg in Resources */,
 				3FE3C7751AE55DAF002F00F5 /* Brickyard-exterior-signage-0217w.jpg in Resources */,
 				D503AB261B066666000D2E29 /* ERC.jpg in Resources */,
-				3FBC65651AE47847001FDB58 /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
