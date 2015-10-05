@@ -39,6 +39,7 @@ class smTourMapViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var imgBuilding: UIImageView!
     @IBOutlet weak var lblText: UILabel!
     
+    
     // Variables for directions
     let baseURLDirections = "https://maps.googleapis.com/maps/api/directions/json?"
     // Stores first route
@@ -399,6 +400,23 @@ class smTourMapViewController: UIViewController, CLLocationManagerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    // Sending current Tour Point info to Video or Pictures View Controller
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toVideo"
+        {
+            if let videoViewController: VideoViewController = segue.destinationViewController as? VideoViewController {
+                videoViewController.pointTitle = tourPoints[currentPoint].title
+                videoViewController.pointSnippet = tourPoints[currentPoint].snippet
+            }
+        }
+        else if segue.identifier == "toPictures"
+        {
+            if let picturesViewController: PicturesViewController = segue.destinationViewController as? PicturesViewController {
+                picturesViewController.pointTitle = tourPoints[currentPoint].title
+                picturesViewController.pointSnippet = tourPoints[currentPoint].snippet
+            }
+        }
+    }
 
     /*
     // MARK: - Navigation
