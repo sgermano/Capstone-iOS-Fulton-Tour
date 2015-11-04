@@ -38,6 +38,9 @@ class smTourMapViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var imgBuilding: UIImageView!
     @IBOutlet weak var lblText: UILabel!
+    @IBOutlet weak var directionsLabel: UILabel!
+    @IBOutlet weak var viewInfoButton: UIButton!
+    
     
     // Variables for directions
     let baseURLDirections = "https://maps.googleapis.com/maps/api/directions/json?"
@@ -91,6 +94,11 @@ class smTourMapViewController: UIViewController, CLLocationManagerDelegate {
             
             i++
         }
+        
+        // Hide Labels and "View Info" Button
+        self.lblText.hidden = true
+        self.directionsLabel.hidden = true
+        self.viewInfoButton.hidden = true
     }
     
     
@@ -138,8 +146,10 @@ class smTourMapViewController: UIViewController, CLLocationManagerDelegate {
         
         //self.mySmallMapView.camera = camera
         
-
-        
+        // Show Labels and "View Info" Button
+        self.lblText.hidden = false
+        self.directionsLabel.hidden = false
+        self.viewInfoButton.hidden = false
     }
     
     func configureMapAndMarkersForRoute(){
@@ -399,6 +409,17 @@ class smTourMapViewController: UIViewController, CLLocationManagerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    // Sending current Tour Point info to Info View Controller
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toInfo"
+        {
+            if let infoViewController: InfoViewController = segue.destinationViewController as? InfoViewController {
+                infoViewController.pointTitle = tourPoints[currentPoint].title
+                infoViewController.pointSnippet = tourPoints[currentPoint].snippet
+                infoViewController.pointImage = imgBuilding.image!
+            }
+        }
+    }
 
     /*
     // MARK: - Navigation
