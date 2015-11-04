@@ -23,7 +23,7 @@ class VideoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Setting Title and Info
+        // Setting Titles
         self.navigationItem.title = pointTitle
         self.snippetLabel.text = pointSnippet
         
