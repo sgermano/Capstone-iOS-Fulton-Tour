@@ -29,23 +29,9 @@ class PicturesViewController: UIViewController {
         self.snippetLabel.text = pointSnippet
         
         // Determining which pictures to display
-        if pointTitle == "BYENG"
+        if pointTitle == "Bookstore"
         {
-            images.append(UIImage(named: "BYENG.jpg")!)
-            images.append(UIImage(named: "BYAC.jpg")!)
-            imageView.image = images[index]
-        }
-        else if pointTitle == "CAVC"
-        {
-            images.append(UIImage(named: "CAVC.jpg")!)
-            images.append(UIImage(named: "CAVC-2.jpg")!)
-            imageView.image = images[index]
-        }
-        else if pointTitle == "CTRPT"
-        {
-            images.append(UIImage(named: "CTRPT.jpg")!)
-            images.append(UIImage(named: "CTRPT-2.jpg")!)
-            images.append(UIImage(named: "CTRPT-3.jpg")!)
+            images.append(UIImage(named: "Bookstore.jpg")!)
             imageView.image = images[index]
         }
         else if pointTitle == "ECF"
@@ -75,13 +61,6 @@ class PicturesViewController: UIViewController {
             images.append(UIImage(named: "ISTB1-2.jpg")!)
             imageView.image = images[index]
         }
-        else if pointTitle == "ISTB4"
-        {
-            images.append(UIImage(named: "ISTB4.jpg")!)
-            images.append(UIImage(named: "ISTB4-2.jpg")!)
-            images.append(UIImage(named: "ISTB4-3.jpg")!)
-            imageView.image = images[index]
-        }
         else if pointTitle == "Math Center"
         {
             images.append(UIImage(named: "Math Center.jpg")!)
@@ -93,13 +72,6 @@ class PicturesViewController: UIViewController {
             images.append(UIImage(named: "NOBLE.jpg")!)
             images.append(UIImage(named: "NOBLE-2.jpg")!)
             images.append(UIImage(named: "NOBLE-3.jpg")!)
-            imageView.image = images[index]
-        }
-        else if pointTitle == "Palm Walk"
-        {
-            images.append(UIImage(named: "Palm Walk.jpg")!)
-            images.append(UIImage(named: "Palm Walk-2.jpg")!)
-            images.append(UIImage(named: "Palm Walk-3.png")!)
             imageView.image = images[index]
         }
         else if pointTitle == "PSA"

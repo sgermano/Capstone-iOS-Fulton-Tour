@@ -28,21 +28,13 @@ class VideoViewController: UIViewController {
         self.snippetLabel.text = pointSnippet
         
         // Determining which video to stream
-        if pointTitle == "CAVC"
-        {
-            embedLink = "<iframe src=\"https://player.vimeo.com/video/75529655?color=ffb310\" width=\"500\" height=\"281\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
-        }
-        else if pointTitle == "ECG"
+        if pointTitle == "ECG"
         {
             embedLink = "<iframe src=\"https://player.vimeo.com/video/72423533\" width=\"500\" height=\"281\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
         }
         else if pointTitle == "ISTB1"
         {
             embedLink = "<iframe src=\"https://player.vimeo.com/video/76619593?color=ffb310\" width=\"500\" height=\"281\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
-        }
-        else if pointTitle == "ISTB4"
-        {
-            embedLink = "<iframe src=\"https://player.vimeo.com/video/69499459?color=ffb310\" width=\"500\" height=\"281\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
         }
         else // Else show a Fulton Engineering Video
         {

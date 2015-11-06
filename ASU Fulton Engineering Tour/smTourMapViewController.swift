@@ -132,11 +132,16 @@ class smTourMapViewController: UIViewController, CLLocationManagerDelegate {
         
         let destinationCoordinate = (NSString(format: "%.15f", tourPoints[nextPoint].pointLatitude) as String) + "," + (NSString(format: "%.15f", tourPoints[nextPoint].pointLongitude) as String)
         var waypointsArray: Array<String> = []
+        let myLatitude = tourPoints[nextPoint].pointLatitude
+        let myLongitude = tourPoints[nextPoint].pointLongitude
+        let coord = CLLocationCoordinate2D(latitude: myLatitude as
+            CLLocationDegrees, longitude: myLongitude as CLLocationDegrees)
         getDirections(originCoordinate, destination : destinationCoordinate, waypoints : nil, travelMode : "walking", completionHandler: { (status, success) -> Void in
             if success {
                 self.configureMapAndMarkersForRoute()
                 self.drawRoute()
                 self.displayRouteInfo()
+                self.drawCircle(coord)
             }
             else {
                 println(status)
@@ -203,6 +208,18 @@ class smTourMapViewController: UIViewController, CLLocationManagerDelegate {
         routePolyline.map = mySmallMapView
         routePolyline.strokeWidth = 5
         routePolyline.strokeColor = UIColor.blackColor()
+    }
+    
+    func drawCircle(position: CLLocationCoordinate2D) {
+        
+        //var latitude = position.latitude
+        //var longitude = position.longitude
+        //var circleCenter = CLLocationCoordinate2DMake(latitude, longitude)
+        var circle = GMSCircle(position: position, radius: 20)
+        circle.strokeColor = UIColor.blueColor()
+        circle.fillColor = UIColor(red: 0, green: 0, blue: 0.35, alpha: 0.20)
+        circle.map = mySmallMapView
+        
     }
     
     func displayRouteInfo(){
