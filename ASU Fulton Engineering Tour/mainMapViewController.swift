@@ -3,7 +3,7 @@
 //  ASU Fulton Engineering Tour
 //
 //  Created by Suzanne Germano on 4/20/15.
-//  Copyright (c) 2015 Germano. All rights reserved.
+//  Copyright (c) 2015 Tour Devil. All rights reserved.
 //
 
 import UIKit

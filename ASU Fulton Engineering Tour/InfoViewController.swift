@@ -3,7 +3,7 @@
 //  ASU Fulton Engineering Tour
 //
 //  Created by Mitchell Corbin on 11/3/15.
-//  Copyright (c) 2015 Germano. All rights reserved.
+//  Copyright (c) 2015 Tour Devil. All rights reserved.
 //
 
 import UIKit

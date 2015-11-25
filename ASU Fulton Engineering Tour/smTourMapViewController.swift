@@ -4,7 +4,7 @@
 //  ASU Fulton Engineering Tour
 //
 //  Created by Suzanne Germano on 4/22/15.
-//  Copyright (c) 2015 Germano. All rights reserved.
+//  Copyright (c) 2015 Tour Devil. All rights reserved.
 //
 
 import UIKit
@@ -67,6 +67,7 @@ class smTourMapViewController: UIViewController, CLLocationManagerDelegate {
     
     var totalDuration: String!
     
+    var justBegan: Bool = true
     
     @IBOutlet weak var mySmallMapView: GMSMapView!
     
@@ -183,10 +184,20 @@ class smTourMapViewController: UIViewController, CLLocationManagerDelegate {
         markerNext.map = mySmallMapView
         gmsMarkers.append(markerNext)
         
-        let destImage = markerNext.title + ".jpg"
-        imgBuilding.image =  UIImage(named: destImage)
-        lblText.text = markerNext.snippet
-        self.mySmallMapView.camera = camera
+        if justBegan == true
+        {
+            let destImage = markerCurrent.title + ".jpg"
+            imgBuilding.image =  UIImage(named: destImage)
+            lblText.text = markerCurrent.snippet
+            self.mySmallMapView.camera = camera
+        }
+        else
+        {
+            let destImage = markerNext.title + ".jpg"
+            imgBuilding.image =  UIImage(named: destImage)
+            lblText.text = markerNext.snippet
+            self.mySmallMapView.camera = camera
+        }
         
         if (currentPoint == tourPoints.count-1){
            currentPoint = 0
@@ -203,6 +214,13 @@ class smTourMapViewController: UIViewController, CLLocationManagerDelegate {
             nextPoint = 0}
         else{
             nextPoint++}
+        
+        if justBegan == true
+        {
+            currentPoint = 0
+            nextPoint = 1
+            justBegan = false
+        }
     }
     
     func drawRoute(){

@@ -3,7 +3,7 @@
 //  ASU Fulton Engineering Tour
 //
 //  Created by Mitchell Corbin on 10/3/15.
-//  Copyright (c) 2015 Germano. All rights reserved.
+//  Copyright (c) 2015 Tour Devil. All rights reserved.
 //
 
 import UIKit
@@ -20,8 +20,14 @@ class VideoViewController: UIViewController {
     // Variables for the embedded link to a video
     var embedLink: NSString = NSString()
     
+    // Variable to Parse XML
+    var parser: TourXMLParser = TourXMLParser()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Parsing XML
+        parser.beginParsing()
         
         // Setting Titles
         self.navigationItem.title = pointTitle
@@ -30,11 +36,35 @@ class VideoViewController: UIViewController {
         // Determining which video to stream
         if pointTitle == "ECG"
         {
-            embedLink = "<iframe src=\"https://player.vimeo.com/video/72423533?color=ffb310\" width=\"500\" height=\"281\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+            embedLink = parser.videosECG[0]
+        }
+        else if pointTitle == "ECF"
+        {
+            embedLink = parser.videosECF[0]
+        }
+        else if pointTitle == "PSA"
+        {
+            embedLink = parser.videosPSA[0]
+        }
+        else if pointTitle == "Math Center"
+        {
+            embedLink = parser.videosMathCenter[0]
+        }
+        else if pointTitle == "ERC"
+        {
+            embedLink = parser.videosERC[0]
+        }
+        else if pointTitle == "NOBLE"
+        {
+            embedLink = parser.videosNOBLE[0]
         }
         else if pointTitle == "ISTB1"
         {
-            embedLink = "<iframe src=\"https://player.vimeo.com/video/76619593?color=ffb310\" width=\"500\" height=\"281\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+            embedLink = parser.videosISTB1[0]
+        }
+        else if pointTitle == "Bookstore"
+        {
+            embedLink = parser.videosBookstore[0]
         }
         else // Else show a Fulton Engineering Video
         {

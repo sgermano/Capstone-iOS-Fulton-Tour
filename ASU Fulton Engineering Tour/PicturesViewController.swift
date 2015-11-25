@@ -3,7 +3,7 @@
 //  ASU Fulton Engineering Tour
 //
 //  Created by Mitchell Corbin on 10/4/15.
-//  Copyright (c) 2015 Germano. All rights reserved.
+//  Copyright (c) 2015 Tour Devil. All rights reserved.
 //
 
 import UIKit
@@ -20,9 +20,15 @@ class PicturesViewController: UIViewController {
     // Variables used to receive info from smTourMapViewController
     var pointTitle: String = String()
     var pointSnippet: String = String()
+    
+    // Variable to Parse XML
+    var parser: TourXMLParser = TourXMLParser()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Parsing XML
+        parser.beginParsing()
         
         // Setting Titles
         self.navigationItem.title = pointTitle
@@ -31,53 +37,98 @@ class PicturesViewController: UIViewController {
         // Determining which pictures to display
         if pointTitle == "Bookstore"
         {
-            images.append(UIImage(named: "Bookstore.jpg")!)
+            for (var i = 0; i < parser.imagesBookstore.count; i++)
+            {
+                if let url  = NSURL(string: parser.imagesBookstore[i]), data = NSData(contentsOfURL: url)
+                {
+                    images.append(UIImage(data: data)!)
+                }
+            }
+            
             imageView.image = images[index]
         }
         else if pointTitle == "ECF"
         {
-            images.append(UIImage(named: "ECF.jpg")!)
-            images.append(UIImage(named: "ECF-2.jpg")!)
-            images.append(UIImage(named: "ECF-3.jpg")!)
-            images.append(UIImage(named: "ECF-4.jpg")!)
+            for (var i = 0; i < parser.imagesECF.count; i++)
+            {
+                if let url  = NSURL(string: parser.imagesECF[i]), data = NSData(contentsOfURL: url)
+                {
+                    images.append(UIImage(data: data)!)
+                }
+            }
+            
             imageView.image = images[index]
         }
         else if pointTitle == "ECG"
         {
-            images.append(UIImage(named: "ECG.jpg")!)
-            images.append(UIImage(named: "ECG-2.jpg")!)
+            for (var i = 0; i < parser.imagesECG.count; i++)
+            {
+                if let url  = NSURL(string: parser.imagesECG[i]), data = NSData(contentsOfURL: url)
+                {
+                    images.append(UIImage(data: data)!)
+                }
+            }
+            
             imageView.image = images[index]
         }
         else if pointTitle == "ERC"
         {
-            images.append(UIImage(named: "ERC.jpg")!)
-            images.append(UIImage(named: "ERC-2.jpg")!)
-            images.append(UIImage(named: "ERC-3.jpg")!)
+            for (var i = 0; i < parser.imagesERC.count; i++)
+            {
+                if let url  = NSURL(string: parser.imagesERC[i]), data = NSData(contentsOfURL: url)
+                {
+                    images.append(UIImage(data: data)!)
+                }
+            }
+            
             imageView.image = images[index]
         }
         else if pointTitle == "ISTB1"
         {
-            images.append(UIImage(named: "ISTB1.jpg")!)
-            images.append(UIImage(named: "ISTB1-2.jpg")!)
+            for (var i = 0; i < parser.imagesISTB1.count; i++)
+            {
+                if let url  = NSURL(string: parser.imagesISTB1[i]), data = NSData(contentsOfURL: url)
+                {
+                    images.append(UIImage(data: data)!)
+                }
+            }
+            
             imageView.image = images[index]
         }
         else if pointTitle == "Math Center"
         {
-            images.append(UIImage(named: "Math Center.jpg")!)
-            images.append(UIImage(named: "Math Center-2.jpg")!)
+            for (var i = 0; i < parser.imagesMathCenter.count; i++)
+            {
+                if let url  = NSURL(string: parser.imagesMathCenter[i]), data = NSData(contentsOfURL: url)
+                {
+                    images.append(UIImage(data: data)!)
+                }
+            }
+            
             imageView.image = images[index]
         }
         else if pointTitle == "NOBLE"
         {
-            images.append(UIImage(named: "NOBLE.jpg")!)
-            images.append(UIImage(named: "NOBLE-2.jpg")!)
-            images.append(UIImage(named: "NOBLE-3.jpg")!)
+            for (var i = 0; i < parser.imagesNOBLE.count; i++)
+            {
+                if let url  = NSURL(string: parser.imagesNOBLE[i]), data = NSData(contentsOfURL: url)
+                {
+                    images.append(UIImage(data: data)!)
+                }
+            }
+            
             imageView.image = images[index]
         }
         else if pointTitle == "PSA"
         {
-            images.append(UIImage(named: "PSA.jpg")!)
-            images.append(UIImage(named: "PSA-2.jpg")!)
+            for (var i = 0; i < parser.imagesPSA.count; i++)
+            {
+                if let url  = NSURL(string: parser.imagesPSA[i]), data = NSData(contentsOfURL: url)
+                {
+                    images.append(UIImage(data: data)!)
+                }
+            }
+            
             imageView.image = images[index]
         }
         else
