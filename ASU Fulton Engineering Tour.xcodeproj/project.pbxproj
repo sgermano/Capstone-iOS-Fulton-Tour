@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3F1465A91BC0D2580000C11D /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1465A81BC0D2580000C11D /* VideoViewController.swift */; };
 		3F4DE0641BEC49F8004E3D9A /* Bookstore.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DE0631BEC49F8004E3D9A /* Bookstore.jpg */; };
+		3F55F2491C053D060041F17C /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55F2481C053D060041F17C /* FinalViewController.swift */; };
 		3F6693FD1BE974FE00FF5D7D /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6693FC1BE974FE00FF5D7D /* InfoViewController.swift */; };
 		3F7BBD8F1AE802D0002B98C0 /* smTourMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7BBD8E1AE802D0002B98C0 /* smTourMapViewController.swift */; };
 		3FBC65411AE45C4B001FDB58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC65401AE45C4B001FDB58 /* AppDelegate.swift */; };
@@ -88,6 +89,7 @@
 /* Begin PBXFileReference section */
 		3F1465A81BC0D2580000C11D /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		3F4DE0631BEC49F8004E3D9A /* Bookstore.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bookstore.jpg; sourceTree = "<group>"; };
+		3F55F2481C053D060041F17C /* FinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
 		3F6693FC1BE974FE00FF5D7D /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		3F7BBD8E1AE802D0002B98C0 /* smTourMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = smTourMapViewController.swift; sourceTree = "<group>"; };
 		3FBC653B1AE45C4B001FDB58 /* ASU Fulton Engineering Tour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ASU Fulton Engineering Tour.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,6 +213,7 @@
 				3F6693FC1BE974FE00FF5D7D /* InfoViewController.swift */,
 				3FF4DE111BC1D671007FC814 /* PicturesViewController.swift */,
 				3F1465A81BC0D2580000C11D /* VideoViewController.swift */,
+				3F55F2481C053D060041F17C /* FinalViewController.swift */,
 				D5F9D2E71B00A1C7001325E7 /* tourPoints.swift */,
 				3FBC65471AE45C4B001FDB58 /* Images.xcassets */,
 				3FBC65491AE45C4B001FDB58 /* LaunchScreen.xib */,
@@ -432,6 +435,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FBC65431AE45C4B001FDB58 /* ViewController.swift in Sources */,
+				3F55F2491C053D060041F17C /* FinalViewController.swift in Sources */,
 				3FBC65411AE45C4B001FDB58 /* AppDelegate.swift in Sources */,
 				3F1465A91BC0D2580000C11D /* VideoViewController.swift in Sources */,
 				3FE3C7781AE5AE57002F00F5 /* mainMapViewController.swift in Sources */,

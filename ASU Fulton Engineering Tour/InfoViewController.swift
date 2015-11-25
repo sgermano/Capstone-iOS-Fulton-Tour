@@ -20,6 +20,8 @@ class InfoViewController: UIViewController {
     var pointTitle: String = String()
     var pointSnippet: String = String()
     var pointImage: UIImage = UIImage()
+    var pointIndex: Int = Int()
+    var numPoints: Int = Int()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +60,19 @@ class InfoViewController: UIViewController {
         }
     }
     
+    @IBAction func resumeTour(sender: UIButton) {
+        
+        if pointIndex == numPoints - 1
+        {
+            let finalView: FinalViewController = storyboard?.instantiateViewControllerWithIdentifier("finalViewController") as! FinalViewController
+            
+            presentViewController(finalView, animated: true, completion: nil)
+        }
+        else
+        {
+            navigationController!.popViewControllerAnimated(true)
+        }
+    }
     
     
     
