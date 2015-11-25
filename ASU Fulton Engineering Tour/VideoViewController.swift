@@ -30,7 +30,7 @@ class VideoViewController: UIViewController {
         // Determining which video to stream
         if pointTitle == "ECG"
         {
-            embedLink = "<iframe src=\"https://player.vimeo.com/video/72423533\" width=\"500\" height=\"281\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+            embedLink = "<iframe src=\"https://player.vimeo.com/video/72423533?color=ffb310\" width=\"500\" height=\"281\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
         }
         else if pointTitle == "ISTB1"
         {

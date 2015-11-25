@@ -187,8 +187,13 @@ class smTourMapViewController: UIViewController, CLLocationManagerDelegate {
         imgBuilding.image =  UIImage(named: destImage)
         lblText.text = markerNext.snippet
         self.mySmallMapView.camera = camera
+        
         if (currentPoint == tourPoints.count-1){
            currentPoint = 0
+            
+            let finalView: FinalViewController = storyboard?.instantiateViewControllerWithIdentifier("finalViewController") as! FinalViewController
+            
+            presentViewController(finalView, animated: true, completion: nil)
         }
         else{
             currentPoint++
@@ -434,6 +439,8 @@ class smTourMapViewController: UIViewController, CLLocationManagerDelegate {
                 infoViewController.pointTitle = tourPoints[currentPoint].title
                 infoViewController.pointSnippet = tourPoints[currentPoint].snippet
                 infoViewController.pointImage = imgBuilding.image!
+                infoViewController.pointIndex = currentPoint
+                infoViewController.numPoints = tourPoints.count
             }
         }
     }
