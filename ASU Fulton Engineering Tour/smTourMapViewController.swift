@@ -41,6 +41,8 @@ class smTourMapViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var directionsLabel: UILabel!
     @IBOutlet weak var viewInfoButton: UIButton!
     
+    // Variable to Parse XML
+    var parser: TourXMLParser = TourXMLParser()
     
     // Variables for directions
     let baseURLDirections = "https://maps.googleapis.com/maps/api/directions/json?"
@@ -190,6 +192,10 @@ class smTourMapViewController: UIViewController, CLLocationManagerDelegate {
             imgBuilding.image =  UIImage(named: destImage)
             lblText.text = markerCurrent.snippet
             self.mySmallMapView.camera = camera
+            
+            // Trims extra whitespace and newlines
+            let trimmedDirections = parser.directionsECG.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+            directionsLabel.text = trimmedDirections
         }
         else
         {
@@ -197,6 +203,48 @@ class smTourMapViewController: UIViewController, CLLocationManagerDelegate {
             imgBuilding.image =  UIImage(named: destImage)
             lblText.text = markerNext.snippet
             self.mySmallMapView.camera = camera
+            
+            // Setting directionsLabel to correct Directions to next Building
+            if markerNext.title == "ECG"
+            {
+                let trimmedDirections = parser.directionsECG.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+                directionsLabel.text = trimmedDirections
+            }
+            else if markerNext.title == "ECF"
+            {
+                let trimmedDirections = parser.directionsECF.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+                directionsLabel.text = trimmedDirections
+            }
+            else if markerNext.title == "PSA"
+            {
+                let trimmedDirections = parser.directionsPSA.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+                directionsLabel.text = trimmedDirections
+            }
+            else if markerNext.title == "Math Center"
+            {
+                let trimmedDirections = parser.directionsMathCenter.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+                directionsLabel.text = trimmedDirections
+            }
+            else if markerNext.title == "ERC"
+            {
+                let trimmedDirections = parser.directionsERC.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+                directionsLabel.text = trimmedDirections
+            }
+            else if markerNext.title == "NOBLE"
+            {
+                let trimmedDirections = parser.directionsNOBLE.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+                directionsLabel.text = trimmedDirections
+            }
+            else if markerNext.title == "ISTB1"
+            {
+                let trimmedDirections = parser.directionsISTB1.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+                directionsLabel.text = trimmedDirections
+            }
+            else if markerNext.title == "Bookstore"
+            {
+                let trimmedDirections = parser.directionsBookstore.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+                directionsLabel.text = trimmedDirections
+            }
         }
         
         if (currentPoint == tourPoints.count-1){
@@ -335,6 +383,13 @@ class smTourMapViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadPoints()
+        
+        // Parsing XML
+        parser.beginParsing()
+        
+        // Setting Label with directions to be aligned at the top-left
+        directionsLabel.sizeToFit()
+        
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             title: "Next Tour Point",
             style: .Plain,
