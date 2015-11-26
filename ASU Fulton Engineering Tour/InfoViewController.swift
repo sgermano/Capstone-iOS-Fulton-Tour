@@ -22,9 +22,15 @@ class InfoViewController: UIViewController {
     var pointImage: UIImage = UIImage()
     var pointIndex: Int = Int()
     var numPoints: Int = Int()
+    
+    // Variable to Parse XML
+    var parser: TourXMLParser = TourXMLParser()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Parsing XML
+        parser.beginParsing()
         
         // Setting Label with directions to be aligned at the top-left
         infoLabel.sizeToFit()
@@ -33,6 +39,49 @@ class InfoViewController: UIViewController {
         self.navigationItem.title = pointTitle
         self.snippetLabel.text = pointSnippet
         self.imageView.image = pointImage
+        
+        // Setting infoLabel to correct Building Description
+        if pointTitle == "ECG"
+        {
+            // Trims extra whitespace and newlines
+            let trimmedDescript = parser.descriptionECG.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+            infoLabel.text = trimmedDescript
+        }
+        else if pointTitle == "ECF"
+        {
+            let trimmedDescript = parser.descriptionECF.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+            infoLabel.text = trimmedDescript
+        }
+        else if pointTitle == "PSA"
+        {
+            let trimmedDescript = parser.descriptionPSA.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+            infoLabel.text = trimmedDescript
+        }
+        else if pointTitle == "Math Center"
+        {
+            let trimmedDescript = parser.descriptionMathCenter.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+            infoLabel.text = trimmedDescript
+        }
+        else if pointTitle == "ERC"
+        {
+            let trimmedDescript = parser.descriptionERC.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+            infoLabel.text = trimmedDescript
+        }
+        else if pointTitle == "NOBLE"
+        {
+            let trimmedDescript = parser.descriptionNOBLE.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+            infoLabel.text = trimmedDescript
+        }
+        else if pointTitle == "ISTB1"
+        {
+            let trimmedDescript = parser.descriptionISTB1.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+            infoLabel.text = trimmedDescript
+        }
+        else if pointTitle == "Bookstore"
+        {
+            let trimmedDescript = parser.descriptionBookstore.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+            infoLabel.text = trimmedDescript
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -58,8 +107,16 @@ class InfoViewController: UIViewController {
                 picturesViewController.pointSnippet = pointSnippet
             }
         }
+        else if segue.identifier == "toAudio"
+        {
+            if let audioViewController: AudioViewController = segue.destinationViewController as? AudioViewController {
+                audioViewController.pointTitle = pointTitle
+                audioViewController.pointSnippet = pointSnippet
+            }
+        }
     }
     
+    // Action to Resume Tour
     @IBAction func resumeTour(sender: UIButton) {
         
         if pointIndex == numPoints - 1
@@ -74,13 +131,6 @@ class InfoViewController: UIViewController {
         }
     }
     
-    
-    
-    
-    
-    
-    
-
     /*
     // MARK: - Navigation
 
