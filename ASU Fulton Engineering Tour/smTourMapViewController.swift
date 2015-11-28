@@ -425,6 +425,7 @@ class smTourMapViewController: UIViewController, CLLocationManagerDelegate {
         self.mySmallMapView.camera = camera
         //self.view = mySmallMapView
         
+        // Markers to show all tour points on first screen after "START TOUR" Button pressed
         var marker = GMSMarker()
         marker.position = CLLocationCoordinate2DMake(33.419999999999995, -111.93194444444445)
         marker.appearAnimation = kGMSMarkerAnimationPop
@@ -444,43 +445,58 @@ class smTourMapViewController: UIViewController, CLLocationManagerDelegate {
         gmsMarkers.append(marker2)
         
         var marker3 = GMSMarker()
-        marker3.position = CLLocationCoordinate2DMake(33.41947836, -111.93689704)
+        marker3.position = CLLocationCoordinate2DMake(33.420298, -111.932593)
         marker3.appearAnimation = kGMSMarkerAnimationPop
-        marker3.title = "COOR"
-        marker3.snippet = "Latte Coor"
+        marker3.title = "PSA"
+        marker3.snippet = "Physical Sciences"
         marker3.icon = UIImage(named: "ASU-fork-2")
         marker3.map = mySmallMapView
         gmsMarkers.append(marker3)
         
-        // brickyard 33.423732, -111.939438
         var marker4 = GMSMarker()
-        marker4.position = CLLocationCoordinate2DMake(33.423732, -111.939438)
+        marker4.position = CLLocationCoordinate2DMake(33.420298, -111.931841)
         marker4.appearAnimation = kGMSMarkerAnimationPop
-        marker4.title = "BYENG"
-        marker4.snippet = "Brickyard Engineering"
+        marker4.title = "Math Center"
+        marker4.snippet = "Math Tutoring Center"
         marker4.icon = UIImage(named: "ASU-fork-2")
         marker4.map = mySmallMapView
         gmsMarkers.append(marker4)
         
-        //centerpoint 33.423802, -111.940870
         var marker5 = GMSMarker()
-        marker5.position = CLLocationCoordinate2DMake(33.423802, -111.940870)
+        marker5.position = CLLocationCoordinate2DMake(33.420056, -111.931327)
         marker5.appearAnimation = kGMSMarkerAnimationPop
-        marker5.title = "CTRPT"
-        marker5.snippet = "Center Point"
+        marker5.title = "ERC"
+        marker5.snippet = "Engineering Research Center"
         marker5.icon = UIImage(named: "ASU-fork-2")
         marker5.map = mySmallMapView
         gmsMarkers.append(marker5)
         
-        // CAVC 33.423345, -111.935736
         var marker6 = GMSMarker()
-        marker6.position = CLLocationCoordinate2DMake(33.423345, -111.935736)
+        marker6.position = CLLocationCoordinate2DMake(33.419331, -111.931273)
         marker6.appearAnimation = kGMSMarkerAnimationPop
-        marker6.title = "CAVC"
-        marker6.snippet = "College Ave Commons"
+        marker6.title = "NOBLE"
+        marker6.snippet = "Noble Library & SCOB"
         marker6.icon = UIImage(named: "ASU-fork-2")
         marker6.map = mySmallMapView
         gmsMarkers.append(marker6)
+        
+        var marker7 = GMSMarker()
+        marker7.position = CLLocationCoordinate2DMake(33.419018, -111.931369)
+        marker7.appearAnimation = kGMSMarkerAnimationPop
+        marker7.title = "ISTB1"
+        marker7.snippet = "Interdisciplinary Science and Technology 1"
+        marker7.icon = UIImage(named: "ASU-fork-2")
+        marker7.map = mySmallMapView
+        gmsMarkers.append(marker7)
+        
+        var marker8 = GMSMarker()
+        marker8.position = CLLocationCoordinate2DMake(33.418334, -111.932156)
+        marker8.appearAnimation = kGMSMarkerAnimationPop
+        marker8.title = "Bookstore"
+        marker8.snippet = "Sun Devil Bookstore"
+        marker8.icon = UIImage(named: "ASU-fork-2")
+        marker8.map = mySmallMapView
+        gmsMarkers.append(marker8)
         
     }
     
