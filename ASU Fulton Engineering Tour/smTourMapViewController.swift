@@ -131,6 +131,14 @@ class smTourMapViewController: UIViewController, CLLocationManagerDelegate {
         markerNext.map = mySmallMapView
         gmsMarkers.append(markerNext)
         */
+        
+        // Making sure the tour starts at ECG
+        if justBegan == true
+        {
+            currentPoint = 0
+            nextPoint = 0
+        }
+        
         let originCoordinate = (NSString(format: "%.15f", tourPoints[currentPoint].pointLatitude) as String) + "," + (NSString(format: "%.15f", tourPoints[currentPoint].pointLongitude) as String)
         
         let destinationCoordinate = (NSString(format: "%.15f", tourPoints[nextPoint].pointLatitude) as String) + "," + (NSString(format: "%.15f", tourPoints[nextPoint].pointLongitude) as String)
