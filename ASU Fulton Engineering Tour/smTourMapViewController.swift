@@ -504,7 +504,7 @@ class smTourMapViewController: UIViewController, CLLocationManagerDelegate {
     override func observeValueForKeyPath(keyPath: String, ofObject object: AnyObject, change: [NSObject : AnyObject], context: UnsafeMutablePointer<Void>) {
         if !didFindMyLocation {
             let myLocation: CLLocation = change[NSKeyValueChangeNewKey] as! CLLocation
-            mySmallMapView.camera = GMSCameraPosition.cameraWithTarget(myLocation.coordinate, zoom: 13.0)
+            mySmallMapView.camera = GMSCameraPosition.cameraWithTarget(myLocation.coordinate, zoom: 16.25)
             mySmallMapView.settings.myLocationButton = true
             
             didFindMyLocation = true
